@@ -1,10 +1,10 @@
 import os
 from openpyxl import load_workbook
 import shutil
-from config import LOCAL_ROOT
+from config import LOCAL_ROOT, FILE_NAME
 
 
-workbook = load_workbook("data_new_2.xlsx", data_only=True)
+workbook = load_workbook(FILE_NAME, data_only=True)
 
 char_sheet = workbook["캐릭터"]
 
